@@ -16,7 +16,8 @@ app.get("/", async (req, res) => {
 
     try {
         const response = await axios.get(
-            `http://api.openweathermap.org/data/2.5/weather?q=${city},us&APPID=fca670fa1b62aff8ad521c0d8e97886e` 
+            //removed api key for upload to github
+            `http://api.openweathermap.org/data/2.5/weather?q=${city},us&APPID={apikey}` 
         );
     
         const temperaturek = response.data.main.temp;
